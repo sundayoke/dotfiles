@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-        height 42
+        height 32
 	font pango: Droid Sans Mono 12
 	colors {
 		separator #191919
@@ -207,6 +207,7 @@ bar {
 #exec --no-startup-id waybar
 exec --no-startup-id blueman-applet
 exec --no-startup-id pasystray
+exec --no-startup-id insync start
 exec --no-startup-id xset dpms 900 #turn off after 15 minutes
 exec --no-startup-id xset +dpms
 exec --no-startup-id xset s off
